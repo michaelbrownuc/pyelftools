@@ -361,6 +361,7 @@ class DWARFInfo(object):
 
         while offset < self.debug_info_sec.size:
             cu = self._cached_CU_at_offset(offset)
+
             if not cu:
                 return
 
